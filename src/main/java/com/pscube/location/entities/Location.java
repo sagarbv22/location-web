@@ -10,13 +10,12 @@ public class Location {
 	private Integer id;
 	private String code;
 	private String name;
-	private String Type;
+	private String type;
 
-	
 	public Location() {
-		
+
 	}
-	
+
 	public Integer getId() {
 		return id;
 	}
@@ -42,16 +41,16 @@ public class Location {
 	}
 
 	public String getType() {
-		return Type;
+		return type;
 	}
 
 	public void setType(String type) {
-		Type = type;
+		this.type = type;
 	}
 
 	@Override
 	public String toString() {
-		return "Location [id=" + id + ", name=" + name + ", Type=" + Type + "]";
+		return "Location [id=" + id + ", code=" + code + ", name=" + name + ", type=" + type + "]";
 	}
 
 	public Location(Integer id, String code, String name, String type) {
@@ -59,7 +58,7 @@ public class Location {
 		this.id = id;
 		this.code = code;
 		this.name = name;
-		Type = type;
+		this.type = type;
 	}
 
 }
